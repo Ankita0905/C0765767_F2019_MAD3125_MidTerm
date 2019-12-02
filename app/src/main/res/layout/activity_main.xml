@@ -19,10 +19,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/trocchi"
                 android:text="CANADIAN TAX CALCULATOR"
                 android:textAlignment="center"
-                android:textSize="25sp"
-                android:layout_margin="16dp"
+                android:textColor="#3F51B5"
+                android:textSize="22sp"
                 android:textStyle="bold|italic" />
 
             <com.google.android.material.textfield.TextInputLayout
