@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         lastName.getText().toString().length()==0 ||
                         dob.getText().toString().length()==0 ||
                         grossIncome.getText().toString().length()==0 ||
-                        rrsp.getText().toString().length()==0
+                        rrsp.getText().toString().length()==0 || age<18
                 )
                 {
 //                    sin.setError("Sin Incorrect");
@@ -114,10 +114,10 @@ public class MainActivity extends AppCompatActivity {
                     if (dob.getText().toString().length() == 0) {
                         dob.setError("This Field Cannot Be Empty");
                     }
-//                    if (age < 18) {
-//                        dob.setError("Not Eligible For filing tax");
-//
-//                    }
+                    if (age < 8) {
+                        dob.setError("Not Eligible For filing tax");
+
+                    }
                     if (grossIncome.getText().toString().length() == 0) {
                         grossIncome.setError("This Field Cannot Be Empty");
                     }
@@ -127,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
+                    System.out.println("age"+age);
                     Intent i = new Intent(MainActivity.this, DisplayDataActivity.class);
                     CRACustomer cDetail = new CRACustomer();
                     cDetail.setSinNumber(sin.getText().toString());
