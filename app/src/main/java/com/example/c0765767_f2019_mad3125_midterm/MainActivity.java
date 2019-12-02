@@ -1,6 +1,8 @@
 package com.example.c0765767_f2019_mad3125_midterm;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
@@ -114,7 +116,9 @@ public class MainActivity extends AppCompatActivity {
                     if (dob.getText().toString().length() == 0) {
                         dob.setError("This Field Cannot Be Empty");
                     }
-                    if (age < 8) {
+                    if (age < 18) {
+                        dob.setTextColor(getResources().getColor(R.color.colorAccent));
+                        dob.setTypeface(null, Typeface.BOLD_ITALIC);
                         dob.setError("Not Eligible For filing tax");
 
                     }
