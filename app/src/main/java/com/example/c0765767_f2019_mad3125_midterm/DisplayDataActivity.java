@@ -1,5 +1,6 @@
 package com.example.c0765767_f2019_mad3125_midterm;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Typeface;
@@ -20,11 +21,20 @@ public class DisplayDataActivity extends AppCompatActivity {
     TextView sin,fullname,gender,age,taxdate,grossIncome,federalTax,provincialTax,cpp,ei,carry,totalTaxableIncome,Totaltax,RRSP;
 
     // m = (Marks) getIntent().getSerializableExtra("marks");
+    public void backButton()
+    {
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_data);
+        backButton();
 
         c = (CRACustomer) getIntent().getParcelableExtra("data");
 
