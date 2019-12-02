@@ -17,7 +17,7 @@ public class DisplayDataActivity extends AppCompatActivity {
 
 
     CRACustomer c;
-    TextView sin,fullname,gender,age,taxdate,grossIncome,federalTax,provincialTax,cpp,ei,carry,totalTaxableIncome,Totaltax;
+    TextView sin,fullname,gender,age,taxdate,grossIncome,federalTax,provincialTax,cpp,ei,carry,totalTaxableIncome,Totaltax,RRSP;
 
     // m = (Marks) getIntent().getSerializableExtra("marks");
 
@@ -39,8 +39,10 @@ public class DisplayDataActivity extends AppCompatActivity {
         cpp=findViewById(R.id.txtcpp);
         ei=findViewById(R.id.txtEi);
         carry=findViewById(R.id.txtCarryFrwd);
+        RRSP=findViewById(R.id.txtRrsp);
         totalTaxableIncome=findViewById(R.id.txtTaxableIncome);
         Totaltax=findViewById(R.id.txtTotalTax);
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         NumberFormat nf=NumberFormat.getInstance(Locale.CANADA);
         System.out.println(nf.format(c.getCpp()));
@@ -67,6 +69,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         cpp.setText("$"+String.valueOf(nf.format(c.getCpp())));
         ei.setText("$"+String.valueOf((nf.format(c.getEI()))));
         carry.setText("$"+String.valueOf((nf.format(c.getCarryForwardRrsp()))));
+        RRSP.setText("$"+String.valueOf(nf.format(c.getMaxRrsp())));
         totalTaxableIncome.setText("$"+String.valueOf(nf.format(c.getTotalTaxedIncome())));
         Totaltax.setText("$"+String.valueOf((nf.format(c.getTotalTaxPaid()))));
 
@@ -80,7 +83,7 @@ public class DisplayDataActivity extends AppCompatActivity {
 //        System.out.println("Gender : "+c.getGender());
 //        System.out.println("Cpp : "+c.getCpp());
 //        System.out.println("Rrsp : "+c.getRrsp());
-//        System.out.println("Max Rrsp : "+c.getMaxRrsp());
+ //         System.out.println("Max Rrsp : "+c.getMaxRrsp());
 //        System.out.println("Carry : "+c.getCarryForwardRrsp());
 //        System.out.println("Ei : " + c.getEI());
 //        System.out.println("Total Taxable Income : "+c.getTotalTaxedIncome());
