@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         rrsp=findViewById(R.id.edtrrsp);
         genderRG=findViewById(R.id.genderRG);
         calTaxBtn=findViewById(R.id.btnCalculate);
-//
+
 //        String strsin = sin.getText().toString();
 //
 //        if(TextUtils.) {
