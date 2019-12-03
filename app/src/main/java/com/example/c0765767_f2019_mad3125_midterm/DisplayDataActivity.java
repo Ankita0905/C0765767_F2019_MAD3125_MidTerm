@@ -29,6 +29,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_data);
         //backButton();
 
+        
         c = (CRACustomer) getIntent().getParcelableExtra("data");
 
         sin=findViewById(R.id.txtSin);
