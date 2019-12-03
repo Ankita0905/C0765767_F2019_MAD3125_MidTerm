@@ -29,7 +29,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_data);
         //backButton();
 
-        
+
         c = (CRACustomer) getIntent().getParcelableExtra("data");
 
         sin=findViewById(R.id.txtSin);
@@ -46,6 +46,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         RRSP=findViewById(R.id.txtRrsp);
         totalTaxableIncome=findViewById(R.id.txtTaxableIncome);
         Totaltax=findViewById(R.id.txtTotalTax);
+
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         NumberFormat nf=NumberFormat.getInstance(Locale.CANADA);
