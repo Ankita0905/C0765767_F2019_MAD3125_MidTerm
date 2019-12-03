@@ -21,14 +21,7 @@ public class DisplayDataActivity extends AppCompatActivity {
     TextView sin,fullname,gender,age,taxdate,grossIncome,federalTax,provincialTax,cpp,ei,carry,totalTaxableIncome,Totaltax,RRSP;
 
     // m = (Marks) getIntent().getSerializableExtra("marks");
-    public void backButton()
-    {
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null)
-        {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
-    }
+   
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
