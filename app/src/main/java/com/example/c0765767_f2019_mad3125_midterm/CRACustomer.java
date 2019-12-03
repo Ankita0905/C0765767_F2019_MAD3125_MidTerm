@@ -407,8 +407,6 @@ public class CRACustomer implements Parcelable {
                             tax=tax*0.1316;
                             calculatedPtax=+calculatedPtax+tax;
                             
-
-
                         }
 
                     }
