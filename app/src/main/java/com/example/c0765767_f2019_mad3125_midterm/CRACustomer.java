@@ -241,9 +241,7 @@ public class CRACustomer implements Parcelable {
         return EI;
 
     }
-
-
-
+    
     public double CalFedralTax()
     {
 
@@ -331,7 +329,7 @@ public class CRACustomer implements Parcelable {
 
         return calculatedFtax;
     }
-    
+
     public double CalProvincialTax()
     {
         double tax=0;
