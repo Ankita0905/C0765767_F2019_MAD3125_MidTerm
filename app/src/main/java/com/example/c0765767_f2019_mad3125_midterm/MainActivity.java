@@ -157,7 +157,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    
+                  if(age>18)
+                     {
+                         dob.setTextColor(getResources().getColor(R.color.black));
+                         dob.setTypeface(null, Typeface.NORMAL);
+                     }
 
 
                     System.out.println("age"+age);
