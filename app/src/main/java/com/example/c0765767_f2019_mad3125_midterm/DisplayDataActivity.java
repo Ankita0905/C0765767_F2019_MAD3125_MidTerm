@@ -83,7 +83,7 @@ public class DisplayDataActivity extends AppCompatActivity {
 //        System.out.println("Gender : "+c.getGender());
 //        System.out.println("Cpp : "+c.getCpp());
 //        System.out.println("Rrsp : "+c.getRrsp());
- //         System.out.println("Max Rrsp : "+c.getMaxRrsp());
+//        System.out.println("Max Rrsp : "+c.getMaxRrsp());
 //        System.out.println("Carry : "+c.getCarryForwardRrsp());
 //        System.out.println("Ei : " + c.getEI());
 //        System.out.println("Total Taxable Income : "+c.getTotalTaxedIncome());
