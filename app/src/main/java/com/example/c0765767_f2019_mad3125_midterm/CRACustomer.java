@@ -328,7 +328,7 @@ public class CRACustomer implements Parcelable {
         {
             System.out.println("TotalTaxableIncome Less Than 12069");
         }
-        
+
         return calculatedFtax;
     }
 
@@ -406,8 +406,7 @@ public class CRACustomer implements Parcelable {
                             tax=tti;
                             tax=tax*0.1316;
                             calculatedPtax=+calculatedPtax+tax;
-
-                            //   System.out.println("FTax range 5 : "+tti);
+                            
 
 
                         }
