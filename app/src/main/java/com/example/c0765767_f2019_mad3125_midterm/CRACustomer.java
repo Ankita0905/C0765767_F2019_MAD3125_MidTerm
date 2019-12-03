@@ -420,17 +420,13 @@ public class CRACustomer implements Parcelable {
             System.out.println("TotalTaxableIncome Less Than 10582");
         }
 
-        
+
         return calculatedPtax;
     }
 
 
     private static final CRACustomer ourInstance = new CRACustomer();
-
-
-
-
-
+    
     public static CRACustomer getInstance() {
         return ourInstance;
     }
