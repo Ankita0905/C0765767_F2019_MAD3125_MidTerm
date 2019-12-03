@@ -423,10 +423,9 @@ public class CRACustomer implements Parcelable {
 
         return calculatedPtax;
     }
-
-
-    private static final CRACustomer ourInstance = new CRACustomer();
     
+    private static final CRACustomer ourInstance = new CRACustomer();
+
     public static CRACustomer getInstance() {
         return ourInstance;
     }
