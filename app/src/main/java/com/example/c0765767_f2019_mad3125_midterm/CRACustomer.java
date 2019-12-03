@@ -336,8 +336,6 @@ public class CRACustomer implements Parcelable {
 
     public double CalProvincialTax()
     {
-
-
         double tax=0;
         double calculatedPtax=0;
         double tti=CalTotalTaxableIncome();
