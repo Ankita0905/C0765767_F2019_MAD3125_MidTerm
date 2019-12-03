@@ -58,7 +58,7 @@ public class DisplayDataActivity extends AppCompatActivity {
             carry.setTextColor(this.getResources().getColor(colorAccent));
             carry.setTypeface(null, Typeface.BOLD_ITALIC);
         }
-        
+
         sin.setText(c.getSinNumber());
         fullname.setText(c.getFullName());
         gender.setText(c.getGender());
@@ -77,7 +77,6 @@ public class DisplayDataActivity extends AppCompatActivity {
 
 
 //        System.out.println("Sin Number : "+c.getSinNumber());
-//
 //        System.out.println("Full Name : "+c.getFullName());
 //        System.out.println("DOB : "+c.getDateOfBirth());
 //        System.out.println("Age : "+c.getAge());
